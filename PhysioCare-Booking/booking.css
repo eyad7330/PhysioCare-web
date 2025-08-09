@@ -1,0 +1,70 @@
+body {
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(to right, #f5f5f5, #e0f7fa);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 40px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.logo img {
+  width: 120px;
+  margin-bottom: 20px;
+  animation: spin 3s infinite linear;
+}
+
+h1 {
+  color: #00796b;
+  margin-bottom: 20px;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+.hidden {
+  display: none;
+}
+
+.backBtn {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  background: #ccc;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+@keyframes spin {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}

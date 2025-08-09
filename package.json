@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.0.0",
+    "sharp": "^0.32.4",
+    // ... باقي الحزم
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    // ... باقي الحزم
+  }
+}

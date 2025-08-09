@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhysioCare | حجز موعد</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen px-4">
+
+  <div class="w-full max-w-lg mx-auto bg-gray-800 p-8 rounded-xl shadow-lg">
+    <div class="text-center mb-8">
+      <img src="physiocare-logo.webp" alt="PhysioCare Logo" class="w-24 mx-auto mb-4" />
+      <h1 class="text-3xl font-bold">حجز موعد جديد</h1>
+      <p class="text-gray-400">املأ البيانات التالية لتحديد موعدك</p>
+    </div>
+
+    <form action="#" method="POST">
+      <div class="space-y-6">
+        <div>
+          <label for="name" class="sr-only">الاسم بالكامل</label>
+          <input type="text" id="name" name="name" placeholder="الاسم بالكامل" required class="input-field">
+        </div>
+
+        <div>
+          <label for="phone" class="sr-only">رقم الهاتف</label>
+          <input type="tel" id="phone" name="phone" placeholder="رقم الهاتف" required class="input-field">
+        </div>
+
+        <div>
+          <label for="email" class="sr-only">البريد الإلكتروني</label>
+          <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required class="input-field">
+        </div>
+
+        <div>
+          <label for="date" class="sr-only">اختر التاريخ</label>
+          <input type="date" id="date" name="date" required class="input-field text-gray-400">
+        </div>
+        
+        <div>
+          <label for="doctor" class="sr-only">الطبيب المعالج</label>
+          <textarea id="doctor" name="doctor" rows="3" placeholder="اكتب اسم الطبيب المعالج" required class="input-field"></textarea>
+          <p class="text-xs text-gray-400 mt-2 pr-1">يمكنك كتابة اسم أكثر من طبيب للفصل بينهم بفاصلة (,).</p>
+        </div>
+
+        <div>
+          <label for="notes" class="sr-only">ملاحظات إضافية</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="ملاحظات إضافية (اختياري)" class="input-field"></textarea>
+        </div>
+      </div>
+
+      <div class="mt-8">
+        <button type="submit" class="w-full btn-primary">
+          تأكيد الحجز
+        </button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
